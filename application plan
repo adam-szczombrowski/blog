@@ -1,0 +1,40 @@
+1. Answer Questions
+  - What are we building?
+  - Who are we building it for?
+  - What features do we need to have?
+2. User Stories.
+3. Model our Data
+4. Think through the pages we need in our app.
+
+--- --- --- --- --- --- --- --- --- --- --- --- ---
+
+1.
+  - I am building a personal blog where I will share all the things I learned
+  about web development in a form of a short articles on specific topic. I will
+  also showcase projects that I've done.
+
+  - I am building it mostly for myself but also for other people on the net
+  who may find info on the website useful.
+
+  - Features:
+  adding articles
+  adding projects
+  ability for newcomers to post comments under the articles and projects
+
+2. As a blank I can visit the projects and articles pages.
+  As a blank I can post a comment under the project or article.
+  As I user I can create/edit/destroy projects and articles.
+  As I blank I can log in to create/edit/destroy projects and articles
+  As a user I want to be able to create articles/projects with markdown.
+
+3. Project name:string description:text link:string
+  Article name:string content:text
+  User - by devise
+
+4. root => articles#index
+   home#about
+   articles#show
+   projects#index
+   projects#show
+   projects#new
+   articles#new
