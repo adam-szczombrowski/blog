@@ -1,35 +1,23 @@
 <div class="row">
   <div class="col-md-offset-2 col-md-8 text-center article-show">
+    <%= link_to 'Edit', edit_article_path(@article) %>
+    <%= link_to 'Destroy', article_path(@article), method: :delete, data: {confirm: "Are you sure?"}%>
     <header>
       <p class="date">
         Friday April 10th
       </p>
-      <h1 class="page-title">Projects</h1>
+      <h1 class="page-title"><%= @article.name %></h1>
     </header>
     <div id="content">
       <h2>Article title</h2>
       <p>
-
-      Umami DIY ramps bicycle rights, pork belly chicharrones you probably haven't heard of them franzen tofu food truck echo park occupy. Bicycle rights actually DIY small batch, before they sold out umami twee aesthetic locavore poutine wayfarers XOXO. Seitan marfa bushwick, keffiyeh semiotics narwhal vegan jean shorts pabst lo-fi. Bespoke meditation kitsch chartreuse selvage aesthetic man braid, wolf brunch stumptown. Quinoa fanny pack listicle leggings, man bun ennui umami lo-fi cliche. Biodiesel fashion axe messenger bag, mixtape taxidermy keffiyeh twee sriracha ugh cardigan salvia DIY echo park before they sold out raw denim. Gluten-free cardigan banh mi, next level bespoke affogato fashion axe synth chia truffaut iPhone kombucha.</p>
-      <p>
-        Lumbersexual crucifix lomo leggings. Cronut sartorial bushwick, intelligentsia fap blue bottle offal mixtape semiotics tousled narwhal post-ironic disrupt etsy flannel. Sriracha actually pabst, listicle umami tousled forage. Mixtape lomo fap occupy green juice yr. PBR&B mlkshk cornhole yr heirloom kitsch. Kogi neutra biodiesel godard, vegan wayfarers tousled cred brooklyn austin pabst semiotics pour-over bitters readymade. Cray try-hard keffiyeh, keytar microdosing kombucha semiotics pug waistcoat.
-
-      </p>
-
-      <p>
-        Truffaut try-hard franzen affogato, jean shorts deep v whatever fanny pack cardigan celiac migas poutine leggings organic ugh. +1 yr twee, meggings four dollar toast squid craft beer meditation lomo tofu ugh plaid helvetica disrupt organic. Plaid lomo crucifix, selfies kombucha skateboard chicharrones single-origin coffee umami next level +1 paleo listicle farm-to-table semiotics. Portland gluten-free pour-over, green juice fap church-key 8-bit crucifix. Kickstarter poutine mustache, meditation raw denim PBR&B gochujang seitan thundercats small batch venmo put a bird on it bespoke biodiesel. Hashtag semiotics intelligentsia, chillwave try-hard shabby chic stumptown fashion axe hammock sriracha next level everyday carry mumblecore. Forage cray seitan art party.
-
-
-      </p>
-      <p>
-        Kale chips ennui offal, biodiesel mlkshk shoreditch man bun chambray asymmetrical 90's. Vice put a bird on it small batch keytar neutra locavore, normcore authentic plaid try-hard chicharrones health goth jean shorts vegan. Williamsburg man bun austin microdosing, bushwick readymade hoodie shabby chic. Distillery selvage swag pork belly, shabby chic chia keytar 8-bit. Twee trust fund semiotics occupy cold-pressed, pinterest yr hashtag. Echo park paleo selfies meditation organic authentic neutra, slow-carb listicle. Artisan kombucha blue bottle, affogato actually pug disrupt whatever tattooed sustainable plaid yr godard.
-
+        <%= @article.content %>
       </p>
     </div>
     <hr  />
     <div id="share-box">
       <p>
-        Share Article title
+        Share <%= @article.name %>
       </p>
       <a href="#"><i class="fa fa-twitter"></i></a>
       <a href="#"><i class="fa fa-facebook"></i></a>
