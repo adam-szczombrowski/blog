@@ -1,0 +1,45 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$dark: #424652;
+$light: #9a9da4;
+$highlight: #8bc6db;
+$border: #E9E9E9;
+
+.homepage_padding {
+  padding: 4rem 0;
+}
+.homepage_content{
+  margin-left: 20px;
+  margin-right: 20px;
+  h2{
+    text-transform: uppercase;
+  }
+  hr{
+    width: 3em;
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 2px solid $highlight;
+    margin: 2rem 0;
+  }
+  .date{
+    color: $light;
+  }
+  h3{
+    a{
+      text-decoration: none;
+      color: $dark;
+      &:hover{
+        color: $highlight;
+      }
+    }
+  }
+}
+.about{
+  a{
+  color: $highlight;
+  font-weight: 800;
+  text-decoration: none;
+  }
+}
