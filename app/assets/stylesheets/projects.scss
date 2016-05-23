@@ -1,0 +1,40 @@
+// Place all the styles related to the projects controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$dark: #424652;
+$light: #9a9da4;
+$highlight: #8bc6db;
+$border: #E9E9E9;
+$white: #ffffff;
+
+.project{
+  h2{
+    margin: 0;
+    text-transform: uppercase;
+    a{
+      text-decoration: none;
+      color: $dark;
+      &:hover{
+        color: $highlight;
+      }
+    }
+  }
+  .date{
+    font-size: .9em;
+    margin: 0;
+  }
+  hr{
+    width: 3em;
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 2px solid $highlight;
+    margin: 2rem 0;
+    text-align: center;
+    margin: 3rem auto;
+  }
+}
