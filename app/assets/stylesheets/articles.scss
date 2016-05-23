@@ -1,0 +1,125 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$dark: #424652;
+$light: #9a9da4;
+$highlight: #8bc6db;
+$border: #E9E9E9;
+$white: #ffffff;
+
+.article{
+  h2{
+    margin: 0;
+    text-transform: uppercase;
+    a{
+      text-decoration: none;
+      color: $dark;
+      &:hover{
+        color: $highlight;
+      }
+    }
+  }
+  .date{
+    font-size: .9em;
+    margin: 0;
+  }
+  hr{
+    width: 3em;
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 2px solid $highlight;
+    margin: 2rem 0;
+    text-align: center;
+    margin: 3rem auto;
+  }
+}
+
+// pagnation
+
+.pagination:before{}
+.pagination:after{
+  content: " ";
+  display: table;
+}
+.pagination:after{
+  clear: both;
+}
+.pagination{
+  margin: 3em 0 0 0;
+  a, .previous_page, .current, .next_page{
+    padding: .75em 1rem;
+    margin: 0 .25em;
+    border-radius: .15em;
+    line-height: 20px;
+    text-decoration: none;
+    background: $white;
+    font-style: normal;
+    color: $dark;
+    &:hover{
+      background: $highlight;
+      color: $white;
+    }
+  }
+  .current{
+    background: $highlight;
+    color: $white;
+  }
+  .disabled{
+    color: #C0C0C0;
+    &:hover{
+      color: #C0C0C0;
+      background: white;
+    }
+  }
+}
+
+//-------- Article show
+.article-show{
+  header{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    .date{
+      font-size: .9em;
+      color: $light;
+      margin: 0;
+    }
+    h1{
+      margin: 0;
+    }
+    hr{
+      margin: 2em auto;
+    }
+  }
+}
+
+#content{
+  padding-bottom: 2em;
+  h2{
+    text-align: left;
+    font-weight: bold;
+  }
+  p{
+    text-align:left;
+    margin-top: 2em;
+  }
+}
+
+#share-box{
+  padding-bottom: 1.75em;
+  p{
+    padding-bottom: 1rem 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $dark;
+  }
+  i{
+    color: $dark;
+    padding: 1em 1.5em;
+    &:hover{
+      color: $highlight;
+      cursor: pointer;
+    }
+  }
+}
