@@ -1,0 +1,83 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+@import "font-awesome";
+
+$dark: #424652;
+$light: #9a9da4;
+$highlight: #8bc6db;
+$border: #E9E9E9;
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.clearfix:before{}
+.clearfix:after{
+  content: "";
+  display: table;
+}
+.clearfix:after{
+  clear: both;
+}
+
+h1, h2, h3, h4, h5, h6, p , ul, li{
+  color: $dark;
+}
+h1 {
+  font-size: 3rem;
+}
+
+h2{
+  font-size: 2.5rem;
+}
+
+h3{
+  font-size: 2rem;
+}
+
+h4{
+  font-size: 1.75rem;
+}
+
+h5{
+  font-size: 1.5rem;
+}
+
+h6{
+  font-size: 1.25rem;
+}
+
+p, li{
+  font-size: 1.4rem;
+  line-height: 1.75;
+}
+
+.col-md-offset-1{
+  margin-left: 5%;
+}
+
+
+.page-title{
+  border-bottom: 1px solid $border;
+  padding: 1em 0;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
