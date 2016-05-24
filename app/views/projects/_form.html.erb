@@ -1,0 +1,12 @@
+<%= form_for @project do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <br />
+  <%= f.label :description, "Describe your project" %>
+  <%= f.text_area :description %>
+  <br>
+  <%= f.label :link %>
+  <%= f.text_field :link %>
+  <br />
+  <%= f.submit %>
+<% end %>

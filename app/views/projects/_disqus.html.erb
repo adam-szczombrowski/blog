@@ -7,9 +7,9 @@
 */
 
 var disqus_config = function () {
-this.page.url = '<%= url_for([@article, {only_path: false}]) %>'; // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = '<%= @article.name %>'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-this.page.title = '<%= @article.name %>';
+this.page.url = '<%= url_for([@project, {only_path: false}]) %>'; // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = '<%= @project.name %>'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+this.page.title = '<%= @project.name %>';
 };
 
 (function() { // DON'T EDIT BELOW THIS LINE

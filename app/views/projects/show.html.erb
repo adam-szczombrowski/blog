@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col-md-offset-2 col-md-8 text-center article-show">
+    <%= link_to 'Edit', edit_project_path(@project) %>
+    <%= link_to 'Destroy', project_path(@project), method: :delete, data: {confirm: "Are you sure?"}%>
+    <header>
+      <p class="date">
+        Friday April 10th
+      </p>
+      <h1 class="page-title"><%= @project.name %></h1>
+    </header>
+    <div id="content">
+      <p>
+        <%= markdown @project.description %>
+      </p>
+    </div>
+    <hr  />
+    <div id="share-box">
+      <p>
+        Share <%= @project.name %>
+      </p>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-google-plus"></i></a>
+    </div>
+    <hr>
+    <%= render 'disqus' %>
+  </div>
+</div>
