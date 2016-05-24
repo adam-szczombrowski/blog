@@ -38,3 +38,14 @@ $white: #ffffff;
     margin: 3rem auto;
   }
 }
+.project-button{
+  background: $highlight;
+  color: $white;
+  text-decoration: none;
+  padding: 1em 2em;
+}
+
+.button-wrapper{
+  margin: 4em 0 0 0;
+  text-align: center;
+}
