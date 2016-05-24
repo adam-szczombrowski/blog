@@ -73,11 +73,14 @@ p, li{
   margin-left: 5%;
 }
 
-
 .page-title{
   border-bottom: 1px solid $border;
   padding: 1em 0;
   font-size: 2rem;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.alert, .notice{
+  text-align: center;
 }
