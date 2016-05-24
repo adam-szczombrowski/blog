@@ -4,7 +4,7 @@
     <% @projects.each do |p| %>
     <div class="project">
       <p class="date">
-        <%= p.created_at %>
+        <%= p.pretty_date %>
       </p>
       <h2><%= link_to p.name, p %></h2>
       <hr />

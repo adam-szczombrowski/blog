@@ -4,7 +4,7 @@
     <%= link_to 'Destroy', project_path(@project), method: :delete, data: {confirm: "Are you sure?"}%>
     <header>
       <p class="date">
-        Friday April 10th
+        <%= @project.pretty_date %>
       </p>
       <h1 class="page-title"><%= @project.name %></h1>
     </header>

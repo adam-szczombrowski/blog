@@ -2,7 +2,7 @@ class ProjectsController < ApplicationController
   before_action :find_project, only: [:show, :edit, :update, :destroy]
 
   def index
-    @projects = Project.all.order('created_at desc').paginate(page: params[:page], per_page: 8)
+    @projects = Project.all.order('created_at desc').paginate(page: params[:page], per_page: 8).decorate
   end
 
   def show
@@ -44,6 +44,6 @@ class ProjectsController < ApplicationController
   end
 
   def find_project
-    @project = Project.friendly.find(params[:id])
+    @project = Project.friendly.find(params[:id]).decorate
   end
 end
