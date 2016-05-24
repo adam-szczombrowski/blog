@@ -31,18 +31,12 @@
   <div class="col-md-3 homepage_content">
     <h2>Projects</h2>
     <hr />
-    <h3>The do list</h3>
+    <% @projects.each do |p| %>
+    <h3><%= link_to p.name, p %></h3>
     <p class="date">
-      Friday 10th April 2015
+      <%= p.created_at %>
     </p>
-    <h3>The do list</h3>
-    <p class="date">
-      Friday 10th April 2015
-    </p>
-    <h3>The do list</h3>
-    <p class="date">
-      Friday 10th April 2015
-    </p>
+    <% end %>
   </div>
 
 </div>
