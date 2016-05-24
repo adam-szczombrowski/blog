@@ -17,7 +17,7 @@ gem 'redcarpet', '~> 3.2.2'
 gem 'friendly_id', '~> 5.1.0'
 gem 'will_paginate', '~> 3.1.0'
 gem 'draper', '~> 1.3'
-
+gem 'mail_form', '~> 1.5', '>= 1.5.1'
 
 group :development, :test do
   gem 'byebug'
