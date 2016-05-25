@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe Article do
-  let(:article) {FactoryGirl.build(:article)}
+  let(:article) {build(:article)}
 
   it 'has name' do
     expect(article).to respond_to(:name)
@@ -20,7 +20,8 @@ describe Article do
   end
 
   it 'has unique name' do
-    FactoryGirl.create(:article)
+    art = create(:article)
+    article.name = art.name
     expect {article.save!}.to raise_error(ActiveRecord::RecordInvalid)
   end
 end

@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe Project do
-  let(:project) {FactoryGirl.build(:project)}
+  let(:project) {build(:project)}
 
   it 'has name' do
     expect(project).to respond_to(:name)
@@ -31,7 +31,8 @@ describe Project do
   end
 
   it 'has unique name' do
-    FactoryGirl.create(:project)
+    proj = create(:project)
+    project.name = proj.name
     expect {project.save!}.to raise_error(ActiveRecord::RecordInvalid)
   end
 end
