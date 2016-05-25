@@ -44,7 +44,7 @@ describe ArticlesController do
       end
     end
     context 'when user is not signed in' do
-      it 'redirects to root path' do
+      it 'redirects to sign in path' do
         get :new
         expect(response).to redirect_to new_user_session_path
       end
@@ -97,7 +97,7 @@ describe ArticlesController do
         article.reload
         expect(article.name).to eql 'title'
       end
-      it 'redirects to updated contact' do
+      it 'redirects to updated article' do
         put :update, id: article.id, article: attributes_for(:article)
         expect(response).to redirect_to article
       end
