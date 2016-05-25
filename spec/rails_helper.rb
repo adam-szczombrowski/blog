@@ -40,7 +40,10 @@ RSpec.configure do |config|
   config.include ControllerHelpers, :type => :controller
   config.include FactoryGirl::Syntax::Methods
 
-
+  config.include Warden::Test::Helpers
+  config.before :suite do
+    Warden.test_mode!
+  end
   config.infer_spec_type_from_file_location!
 
   # Filter lines from Rails gems in backtraces.
