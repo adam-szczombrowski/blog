@@ -1,7 +1,7 @@
 FactoryGirl.define do
-  factory :project do |f|
-    f.name "Project name"
-    f.description "Project desc"
-    f.link "www.google.com"
+  factory :project do
+    sequence(:name, 1) { |n| "Name#{n}" }
+    sequence(:description, 1) { |n| "Description#{n}" }
+    sequence(:link, 1) { |n| "Link#{n}"}
   end
 end
