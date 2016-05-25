@@ -22,6 +22,8 @@ gem 'devise', '~> 3.5', '>= 3.5.6'
 
 group :development, :test do
   gem 'byebug'
+  gem 'rspec-rails', '~>3.4'
+  gem 'capybara'
 end
 
 group :development do
