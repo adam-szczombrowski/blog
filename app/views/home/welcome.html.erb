@@ -1,12 +1,15 @@
-<div class="clearfix row homepage_padding">
-  <div class="col-md-offset-1 col-md-4 homepage_content about">
+<div class="clearfix row">
+  <div class="col-md-offset-1 homepage_padding col-md-4 homepage_content about">
     <h2>About</h2>
     <hr />
     <p>
       Hello, I'm Adam, I'm self taught web developer and adventurer. Right now I'm working on my Ruby on Rails and AngularJS skills. When I'm not coding, I travel, dance salsa or play board games with my friends.
     </p>
+    <p>
+      I will present here projects that I'm working on as well as share things that I learned about web development.
+    </p>
   </div>
-  <div class="col-md-3 homepage_content">
+  <div class="col-md-3 homepage_content homepage_padding">
     <h2>Articles</h2>
     <hr />
     <% @articles.each do |art| %>
@@ -16,7 +19,7 @@
     </p>
     <% end %>
   </div>
-  <div class="col-md-3 homepage_content">
+  <div class="col-md-3 homepage_content homepage_padding">
     <h2>Projects</h2>
     <hr />
     <% @projects.each do |p| %>

@@ -46,5 +46,6 @@
 
    - model validations    /done
    - testing / done
-   - change about text on home page
+   - change about text on home page /done
+   - change server to puma /done
    - responsive design
