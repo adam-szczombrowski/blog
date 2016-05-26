@@ -28,8 +28,8 @@
   As a user I want to be able to create articles/projects with markdown.
 
 3. Project name:string description:text link:string
-  Article name:string content:text
-  User - by devise
+   Article name:string content:text
+   User - by devise
 
 4. root => articles#index
    home#about
@@ -45,6 +45,6 @@
    To Do:
 
    - model validations    /done
-   - testing              
+   - testing
    - change about text on home page
    - responsive design
