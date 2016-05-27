@@ -9,8 +9,9 @@ feature 'As a signed in user' do
     visit edit_article_path(article)
     fill_in 'article_name', with: 'Valid name'
     fill_in 'article_content', with: 'Valid content'
+    save_and_open_page
     click_button 'Update Article'
-    expect(article.reload.name).to eq 'Valid name'
+    expect(article.name).to eq 'Valid name'
   end
 
   scenario 'I can not edit article with invalid attributes' do
