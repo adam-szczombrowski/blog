@@ -39,7 +39,6 @@
    projects#new
    articles#new
 
-
    ///////////
 
    To Do:
@@ -48,4 +47,5 @@
    - testing / done
    - change about text on home page /done
    - change server to puma /done
-   - responsive design
+   - responsive design /done
+   - add readme
