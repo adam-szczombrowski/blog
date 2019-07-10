@@ -1,8 +1,8 @@
-== README
+### README
 
 This is a repository for my personal blog, made with the help of Mckenzie Child tutorial.
 
-== Docker
+### Docker
 
 To run the app with docker run
 
