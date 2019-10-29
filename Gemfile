@@ -17,7 +17,7 @@ gem 'friendly_id', '~> 5.1.0'
 gem 'will_paginate', '~> 3.1.0'
 gem 'draper', '~> 1.3'
 gem 'mail_form'
-gem 'devise', '~> 3.5', '>= 3.5.6'
+gem 'devise', '~> 4.7'
 gem 'puma'
 gem 'meta-tags'
 
