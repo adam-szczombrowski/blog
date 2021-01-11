@@ -163,7 +163,7 @@ GEM
     rb-inotify (0.10.0)
       ffi (~> 1.0)
     rdoc (4.3.0)
-    redcarpet (3.2.3)
+    redcarpet (3.5.1)
     regexp_parser (1.5.1)
     request_store (1.4.1)
       rack (>= 1.4)
@@ -254,7 +254,7 @@ DEPENDENCIES
   pygments.rb (~> 0.6.0)
   rails (= 4.2.8)
   rails_12factor
-  redcarpet (~> 3.2.2)
+  redcarpet (~> 3.5.1)
   rspec-rails (~> 3.4)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
